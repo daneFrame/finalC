@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdbool.h>
+int n;
+int last = 1;
+int rows = 2;
+int columns = 0;
+bool done = false;
+
+int main() {
+    for (int i = 0; n != 3; i++){
+        scanf("%d", &n);
+        last = n;
+        if (n = 1 && !(done)){
+            columns++;
+        }
+        if (n > last){
+            done = true; 
+        }
+        if (n < last){
+            rows++;
+        }
+        //gonna add the manner of counting columns here. 
+        //make it so that each time the number is less than the previous number, 2 + it iterates
+        //printf("%d", n);
+    }
+    prtinf("DEBUG: columns = %d", columns);
+    printf("DEBUG: rows = %d", rows);
+    return 0;
+};
